@@ -1,0 +1,114 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #eee;
+}
+
+header, footer{
+    width: 100%;
+    height: 1.4rem;
+    font-size: 0.277777rem;
+    border-top: 1px solid #f0f0f0;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+}
+
+header{
+    background: yellow;
+    top: 0;
+    left: 0;
+}
+
+header div{
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+    color: red;
+    padding-top: 0.1rem;
+}
+
+footer{
+    background: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+footer a{
+    display: block;
+    width: 25%!important;
+    text-align: center;
+    overflow: hidden!important;
+}
+
+footer dl dt{
+    height: 0.777777rem;
+    padding-top: 0.22222rem;
+    position: relative;
+}
+
+
+footer dl dd, .footer dl #my{
+    width: 100%;
+    height: 0.708333rem;
+}
+
+footer .home div{
+    background:url(/static/main/img/home.jpg) no-repeat;
+    background-size: 0.6rem;
+    background-position-x: 0.95rem;
+    width: 100%;
+    height: 100%;
+}
+
+footer .market div{
+    background:url(/static/main/img/market.jpg) no-repeat;
+    background-size: 0.6rem;
+    background-position-x: 0.95rem;
+    width: 100%;
+    height: 100%;
+}
+
+footer .cart div{
+    background:url(/static/main/img/cart.jpg) no-repeat;
+    background-size: 0.6rem;
+    background-position-x: 0.95rem;
+    width: 100%;
+    height: 100%;
+}
+
+footer .mine div{
+    background:url(/static/main/img/mine.jpg) no-repeat;
+    background-size: 0.6rem;
+    background-position-x: 0.95rem;
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+

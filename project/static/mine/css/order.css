@@ -1,0 +1,45 @@
+#order{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: +999;
+    background: #e0e0e0;
+    overflow: hidden;
+}
+
+#order div:first-child{
+    height: 0.8rem;
+    width: 100%;
+    margin-top: 0.2rem;
+    border-bottom: 0.09rem solid lightgrey;
+}
+
+
+#order div:last-child{
+    height: 100%;
+    width: 100%;
+}
+
+#order > div > ul{
+    background: lightpink;
+}
+
+#order div ul #money{
+    float: left;
+    padding-left: 0.4rem;
+}
+
+#order div ul #orderid{
+    float: left;
+    padding-left: 0.2rem;
+}
+
+#order div div{
+    padding-left: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#order div div table th,td{
+    border: 0.03rem solid #000;
+    text-align: center;
+}

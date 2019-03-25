@@ -1,0 +1,94 @@
+{% extends 'axf/base.html' %}
+{% load static from staticfiles %}
+
+{% block linkscript %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}">
+    <script type="text/javascript" charset="utf-8" src="{% static 'home/js/home.js' %}"></script>
+{% endblock linkscript %}
+
+{% block base %}
+    <div id="home">
+        <section class="swiper-container" id="topSwiper">
+            <div class="swiper-wrapper">
+                {% for item in wheelsList %}
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="{{ item.img }}">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-paginaiton-bullets"></div>
+        </section>
+
+        <section id="topMenu">
+            <nav>
+                <ul>
+                    {% for item in navList %}
+                        <li>
+                            <a href="#">
+                                <img src="{{ item.img }}">
+                                <span>{{ item.name }}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+
+            <menu class="swiper-container swiperMenu" id="swiperMenu">
+                <ul class="swiper-wrapper">
+                    {% for item in mustbuyList %}
+                        <li class="swiper-slide">
+                            <a href="/market/{{ item.trackid }}/">
+                                <img src="{{ item.img }}">
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </menu>
+        </section>
+
+        <section id="CVS">
+            <h2>
+                <img src="{{ shop1.img }}" alt="{{ shop1.name }}">
+            </h2>
+            <ul id="shop1">
+                   {% for item in shop2 %}
+                        <li>
+                            <a href="/market/{{ item.trackid }}/0/0/">
+                                <img src="{{ item.img }}" alt="{{ item.name }}">
+                            </a>
+                        </li>
+                   {% endfor %}
+            </ul>
+            <ul id="shop2">
+                {% for item in shop3 %}
+                    <li>
+                        <a href="/market/{{ item.trackid }}/0/0/">
+                            <img src="{{ item.img }}">
+                            <span>{{ item.name }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul id="shop3">
+                {% for item in shop4 %}
+                    <li>
+                        <a href="/market/{{ item.trackid }}/">
+                            <img src="{{ item.img }}" alt="{{ item.name }}">
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul id="shop3">
+                {% for item in shop5 %}
+                    <li>
+                        <a href="/market/{{ item.trackid }}/">
+                            <img src="{{ item.img }}" alt="{{ item.name }}">
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+{% endblock base %}

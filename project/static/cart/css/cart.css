@@ -1,0 +1,249 @@
+#cart{
+    padding: 1.5rem 0;
+    z-index: +15;
+    width: 100%;
+    background: #fafafa;
+    font-family: "Microsoft YaHei", 'Helvetica Neue', Helvetica,
+                STHeiTi, Arial;
+    overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    position: fixed;
+    z-index: +100;
+    width: 100%;
+    border-bottom: 0.04rem solid lightgray;
+    line-height: 1.5rem;
+    background: #fff;
+    top: 0;
+}
+
+.full > section{
+    background: lightpink;
+}
+
+.full > section > ul{
+    border: 0.2rem solid lightgreen;
+    border-width: 0.1rem 0;
+    margin-bottom: 0.2rem;
+}
+
+.full > section > ul > li{
+    margin-left: 0.3rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.full > section > ul > li #right{
+    float: right;
+    margin-top: 0.12rem;
+    color: blue;
+    font-size: 0.2rem;
+}
+
+.infoJustify{
+    float: left;
+    width: 20%;
+    height: 0.5rem;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.infoJustify > b{
+    display: inline-block;
+    width: 100%;
+}
+
+.change{
+    float: right;
+    padding-right: 0.2rem;
+    font-size: 0.35rem;
+}
+
+
+.bill{
+    line-height: 0.75rem;
+    position: relative;
+    border-bottom: 0.09rem solid lightgrey;
+    padding-bottom: 0.1rem;
+}
+
+.bill > p{
+    padding: 0 0.3rem;
+    font-size: 0.35rem;
+    color: lightyellow;
+}
+
+.bill > p:first-child:before{
+    width: 0.2rem;
+    height: 0.3rem;
+    background: yellow;
+    content: '.';
+    color: yellow;
+    margin-right: 0.2rem;
+}
+
+.bill > p > a{
+    float: right;
+    padding-right: 0.2rem;
+    margin-top: -0.4rem;
+    font-size: 0.35rem;
+    margin-right: -0.1rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+}
+
+.bill > p > a #log1{
+    font-size: 0.2rem;
+}
+
+#blank1{
+    border-bottom: 0.09rem solid lightgrey;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.3rem;
+}
+
+#blank1 #time{
+    color: red;
+}
+
+#blank1 #order{
+    float: right;
+    padding-right: 0.2rem;
+    font-size: 0.35rem;
+}
+
+#blank1 #order #log{
+    font-size: 0.2rem;
+}
+
+#blank2{
+    border-bottom: 0.09rem solid lightgrey;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.3rem;
+}
+
+#blank2 > input{
+    width: 79%;
+}
+
+.full menu{
+    height: 100%;
+    width: 100%;
+    padding-left: 0;
+    background: lightpink;
+    margin-top: 0rem;
+    overflow: auto;
+}
+
+.menuList{
+    border-bottom: 0.09rem solid lightgrey;
+}
+
+.menuList .confirm{
+    float: left;
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 0.03rem solid yellow;
+    margin-left: 0.4rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    background: white;
+}
+
+.menuList .confirm .ischoose span{
+    padding-left: 0.08rem;
+    font-weight: 800;
+}
+
+.menuList > a > img{
+    height: 25%;
+    width: 25%;
+    padding-left: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.menuList > a > p{
+    float: right;
+    margin-right: 0rem;
+    color: black;
+    margin-top: 0.2rem;
+    width: 60%;
+}
+
+.menuList > a > span{
+    float: right;
+    margin-top: -1rem;
+    margin-right: 5rem;
+    color: red;
+    font-size: 0.4rem;
+}
+
+.menuList > a > span:before{
+    content: '￥';
+    font-size: 0.4rem;
+}
+
+.menuList section{
+    right: 0;
+    width: 60%;
+    margin-left: 7rem;
+    margin-top: -0.5rem;
+}
+
+.menuList section button{
+    background: #fff;
+    border: 0.04rem solid red;
+    border-radius: 40%;
+    font-size: 0.4rem;
+}
+
+.payTheBill{
+    width: 100%;
+    height: 1.5rem;
+    background: lightpink;
+}
+
+
+.payTheBill .confirm{
+    float: left;
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 0.03rem solid yellow;
+    margin-left: 0.4rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    background: yellow;
+}
+
+.payTheBill > p{
+    width: 75%;
+    float: left;
+    margin-top: 0.45rem;
+    margin-left: 0.2rem;
+}
+
+.payTheBill > p #money{
+    margin-left: 0.5rem;
+}
+
+.payTheBill > p > span:last-child:before{
+    content: '￥';
+    font-size: 0.35rem;
+    color: red;
+}
+
+.payTheBill > p > span:last-child{
+    color: red;
+}
+
+.payTheBill >a{
+    right: 0;
+    background: yellow;
+    position: absolute;
+    line-height: 1.5rem;
+    padding: 0 0.7rem;
+}
